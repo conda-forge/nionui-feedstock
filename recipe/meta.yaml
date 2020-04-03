@@ -13,7 +13,7 @@ source:
   sha256: 76e21bbad1e3a86ed983efdd9527b061d04c46614bef71627070da06dcd89dcc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - nionui=nion.ui.command:main
@@ -28,7 +28,6 @@ requirements:
     - nionutils >=0.3.19
     - numpy
     - python >=3.6
-    - pyqt
 
 test:
   imports:
@@ -37,7 +36,7 @@ test:
 
 about:
   home: https://github.com/nion-software/nionui
-  license: Apache Software
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.txt
   summary: Nion UI framework.
