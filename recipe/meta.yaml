@@ -13,7 +13,7 @@ source:
   sha256: 4b38253bee3613a0e94bf6395f21a4c4b4036939b09bf1bbc19cfd18aa9237ea
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - nionui=nion.ui.command:main
@@ -22,12 +22,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - imageio
-    - nionutils >=0.3.19
+    - nionutils >=0.3.21,<0.4.0
     - numpy
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
