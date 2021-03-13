@@ -25,7 +25,7 @@ requirements:
     - python >=3.7
   run:
     - imageio
-    - nionutils >=0.3.21,<0.4.0
+    - nionutils >=0.3.26,<0.4.0
     - numpy
     - python >=3.7
 
