@@ -1,5 +1,5 @@
 {% set name = "nionui" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +10,7 @@ source:
   #url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
   #sha256: 85c4a64e6a30be2b601f05680e809712589c6dbb561426d4d5e0f35ef5f97e54
   url: https://github.com/nion-software/nionui/archive/{{ version }}.tar.gz
-  sha256: 00ee1d8fe1e463e6e6c99ff16cec809dc17b30f468e5730b55dbcdb0f5f523b4
+  sha256: 0b6ebe51640859bfa3c9a82856b1c739edd4b542c551236aa27973ab503de99b
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - python >=3.8
   run:
     - imageio
-    - nionutils >=0.4.4,<0.5.0
+    - nionutils >=0.4.5,<0.5.0
     - numpy >=1.21,<2.0
     - python >=3.8
 
