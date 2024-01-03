@@ -1,5 +1,5 @@
 {% set name = "nionui" %}
-{% set version = "7.0.1" %}
+{% set version = "7.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +10,7 @@ source:
   #url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
   #sha256: 85c4a64e6a30be2b601f05680e809712589c6dbb561426d4d5e0f35ef5f97e54
   url: https://github.com/nion-software/nionui/archive/{{ version }}.tar.gz
-  sha256: ded842faa027ac745ecf351ec72ec76ea35819969fe0213426d7c7f961347961
+  sha256: 75dfce193d348ac1299da121fdcb640e5956595aeb2fb0b9ecf40c67ef2854a3
 
 build:
   number: 0
