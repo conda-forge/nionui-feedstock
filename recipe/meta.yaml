@@ -1,3 +1,4 @@
+{% set python_min = '3.11' %}
 {% set name = "nionui" %}
 {% set version = "8.0.0" %}
 
@@ -13,7 +14,7 @@ source:
   sha256: 9b542957b3c47cd113d0c07022d30e140925495b1e420eb9a36bccfc4db71bc9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - nionui=nion.ui.command:main
@@ -22,15 +23,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.11
+    - python {{ python_min }}
     - setuptools
   run:
     - imageio
     - nionutils >=4.12,<5.0
     - numpy >=2.0,<3.0
-    - python >=3.11
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - nion.ui
     - nion.ui.test
