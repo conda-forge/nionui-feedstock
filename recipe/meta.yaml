@@ -14,7 +14,7 @@ source:
   sha256: 11e0fabd77e3c8aeeec730e69684ef4dbc44e66a80435892b1af95a6c7996d7a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - nionui=nion.ui.command:main
@@ -26,8 +26,8 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - imageio
-    - nionutils >=4.12,<5.0
+    - imageio >=2.19.0
+    - nionutils >=4.13,<5.0
     - numpy >=2.0,<3.0
     - python >={{ python_min }}
 
